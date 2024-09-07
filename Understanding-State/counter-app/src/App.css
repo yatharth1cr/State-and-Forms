@@ -18,14 +18,14 @@ button {
   cursor: pointer;
 }
 
-.active-step {
-  background-color: blue;
+p {
+  font-weight: bold;
+}
+.active {
+  background-color: cornflowerblue;
+  color: black;
 }
 
-button:hover {
-  color: #282c34;
-  background-color: rgb(250, 140, 121);
-}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

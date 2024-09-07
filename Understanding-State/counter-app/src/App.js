@@ -4,28 +4,51 @@ import "./App.css";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { counter: 0, step: 5 };
+    this.state = {
+      count: 0,
+      step: 5,
+      max: 15,
+      message: "",
+    };
   }
   handleIncrement = () => {
-    this.setState({
-      counter: this.state.counter + this.state.step,
-    });
+    let { count, step, max } = this.state;
+    if (count + step > max) {
+      this.setState({
+        message: `Value can't be greater than ${max}`,
+      });
+    } else {
+      this.setState({
+        count: count + step > max ? count : count + step,
+        message: "",
+      });
+    }
   };
   handleDecrement = () => {
-    this.setState({
-      counter: this.state.counter - this.state.step,
-    });
+    let { count, step, max } = this.state;
+    if (count - step < 0) {
+      this.setState({
+        message: "Value can't be less than 0",
+      });
+    } else {
+      this.setState({
+        count: count - step > max ? count : count - step,
+        message: "",
+      });
+    }
   };
   handleReset = () => {
     this.setState({
-      counter: 0,
+      count: 0,
+      message: "",
     });
   };
   render() {
     return (
       <div className="App">
         <h1>Counter App</h1>
-        <h2>{this.state.counter}</h2>
+        <h2>{this.state.count}</h2>
+        <p>{this.state.message}</p>
         <div>
           <h3>Steps</h3>
           {[5, 10, 15].map((step) => (
@@ -34,9 +57,23 @@ class App extends React.Component {
               onClick={() => {
                 this.setState({ step: step });
               }}
-              className={this.state.step === step ? "active-step" : ""}
+              className={this.state.step === step ? "active" : ""}
             >
               {step}
+            </button>
+          ))}
+        </div>
+        <div>
+          <h3>Max</h3>
+          {[15, 100, 150].map((max) => (
+            <button
+              key={max}
+              onClick={() => {
+                this.setState({ max: max });
+              }}
+              className={this.state.max === max ? "active" : ""}
+            >
+              {max}
             </button>
           ))}
         </div>
