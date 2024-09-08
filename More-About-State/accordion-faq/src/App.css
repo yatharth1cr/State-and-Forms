@@ -1,0 +1,42 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  background-color: cornflowerblue;
+  padding: 15px 20px;
+  margin: 10px auto;
+  list-style-type: none;
+  width: 90%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+h2:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+/* Additional custom styles (if needed) */
+p {
+  transition: all 1.2s ease;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
