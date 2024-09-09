@@ -4,6 +4,7 @@
 - **Types of Components** (Assignment: Component Types)
 - **State and UI** (Assignment: Handling State)
 - **Imperative vs Declarative** (Assignment: Counter With Twist)
-## 2.  More About State
+## 2. More About State
 - **Using State** (Assignment: Accordion FAQ)
 - **More About setState** (Assignment: Food Menu App)
+## 3. 
