@@ -7,4 +7,5 @@
 ## 2. More About State
 - **Using State** (Assignment: Accordion FAQ)
 - **More About setState** (Assignment: Food Menu App)
-## 3. 
+## 3. Conditional Rendering
+- Assignment (movie-app)
