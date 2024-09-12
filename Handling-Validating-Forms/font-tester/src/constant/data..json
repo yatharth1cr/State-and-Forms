@@ -1,0 +1,26 @@
+[
+  {
+    "font-family": "Merriweather",
+    "name": "Serif"
+  },
+  {
+    "font-family": "Lato",
+    "name": "Sans-serif"
+  },
+  {
+    "font-family": "Pacifico",
+    "name": "Cursive"
+  },
+  {
+    "font-family": "Courier New",
+    "name": "Monospace"
+  },
+  {
+    "font-family": "Dancing Script",
+    "name": "Handwriting"
+  },
+  {
+    "font-family": "Lobster",
+    "name": "Display"
+  }
+]
