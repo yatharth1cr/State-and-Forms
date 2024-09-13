@@ -10,4 +10,6 @@
 ## 3. Conditional Rendering
 - Assignment (movie-app)
 ## 4. Handling and Validating Form
-- 
+- **Handling Input Element** (Assignment: Font Tester)
+- **Using Form and Input** (Assignment: Form Validation)
+(Assignment:Shipping And Billing Address)
