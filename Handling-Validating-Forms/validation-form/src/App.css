@@ -1,0 +1,60 @@
+form {
+  background-color: antiquewhite;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: rgb(from color r g b);
+  margin: 1rem auto 0 auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 0px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+textarea,
+input {
+  padding: 0.5rem;
+  border: 2px solid gray;
+  border-radius: 6px;
+  margin: 0.5rem 0 0.25rem 0;
+}
+
+#readOnly {
+  border: dotted;
+}
+
+#file {
+  background-color: white;
+}
+
+#submit {
+  background-color: darkslategray;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem;
+  font-weight: bold;
+}
+
+#submit:hover {
+  background-color: rgb(67, 94, 94);
+  color: rgb(206, 197, 197);
+}
+
+.errors {
+  border: 2px solid rgb(188, 8, 8);
+}
+
+p {
+  color: rgb(188, 8, 8);
+  margin: 0;
+}
